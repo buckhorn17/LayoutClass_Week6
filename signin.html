@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>7TAO七逃 - 會員登入頁</title>
+  <script type="module" crossorigin src="/LayoutClass_Week6/assets/main-8c9d0b1b.js"></script>
+  <link rel="stylesheet" href="/LayoutClass_Week6/assets/main-0f7ffe54.css">
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg mb-lg-8 mb-4 py-lg-6 py-3">
+    <div class="container-xl container-fluid flex-nowrap">
+
+
+        <a href="./index.html" class="navbar-brand d-flex align-items-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo" class="me-4">
+            <div class="d-lg-flex align-items-center d-none me-12">
+                <div class="fs-9 me-1">7TAO</div>
+                <div class="fw-bold">活動訂票網</div>
+            </div>
+
+            <form class="navbar-nav d-flex border border-1 border-primary">
+                <input class="form-control border-primary rounded-0 ft-nts px-6 py-4" type="search" placeholder="探索活動"
+                    aria-label="Search">
+                <button class="btn btn-primary rounded-0 px-5" type="submit"><i
+                        class="icofont-search-1 text-warning fs-12"></i></button>
+            </form>
+
+            <buthrefn class="navbar-hrefggler" type="buthrefn" data-bs-hrefggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="hrefggle navigation">
+                <span class="navbar-hrefggler-icon material-symbols-outlined"></span>
+            </buthrefn>
+        </a>
+
+        <button class="navbar-toggler rounded-1 text-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon material-symbols-outlined"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse gradient-y" id="navbarNav">
+            <ul class="navbar-nav align-items-center ms-lg-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active me-lg-6 me-0"><i class="icofont-ui-file me-1"></i>REGISTER</a>
+                </li>
+                <li class="nav-item mb-0">
+                    <a href="./signin.html" class="nav-link active "><i class="icofont-ui-user me-1"></i>LOGIN</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+</header>
+
+<div class="signin mx-auto pt-lg-7">
+
+
+
+
+  <div class="d-flex flex-wrap justify-content-between flex-column">
+    <div class="p-0">
+      <h1 class="fs-11 fw-bold text-center mb-lg-8 mb-4">會員登入</h1>
+
+
+      <p class="ft-nts mb-2">帳號</p>
+      <div class="form-floating ft-nts mb-4">
+        <input type="email" class="form-control border border-2 border-primary rounded-0" id="floatingInput"
+          placeholder="name@example.com">
+        <label for="floatingInput" class="text-dark">請輸入帳號</label>
+      </div>
+    </div>
+
+    <p class="ft-nts mb-2">密碼</p>
+    <div class="form-floating ft-nts mb-lg-8 mb-6">
+      <input type="email" class="form-control border border-2 border-primary rounded-0" id="floatingInput"
+        placeholder="name@example.com">
+      <label for="floatingInput" class="text-dark">請輸入密碼</label>
+    </div>
+  </div>
+
+
+
+
+
+    <a href="#"
+      class="fs-12 fw-bold ft-nts bg-primary text-white text-center d-block rounded-0 w-100 py-lg-2 py-4">登入<span
+        class="material-icons">
+        keyboard_double_arrow_right
+      </span></a>
+  </div>
+
+
+
+
+
+
+
+</div>
+
+    <footer class="text-center py-8">© 7TAO七逃. All Rights Reserved</footer>      
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- swiper marquee -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    speed: 25000,
+    loop: true,
+    allowTouchMove: false,
+    waitForTransition: false,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    }
+  });
+
+  $('.needs-validation').each(function (index) {
+    $(this).on('submit', function (e) {
+      e.preventDefault();
+      $(this).addClass('was-validated');
+    });
+  });
+</script>
+</body>
+
+</html>
